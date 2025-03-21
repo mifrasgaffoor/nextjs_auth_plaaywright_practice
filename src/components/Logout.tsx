@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const Home = () => {
+const Logout = () => {
   const [message, setMessage] = useState<string | null>(null);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ const Home = () => {
     const loginMessage = localStorage.getItem("loginMessage");
     if (loginMessage) {
       setMessage(loginMessage);
-      localStorage.removeItem("loginMessage"); 
+      localStorage.removeItem("loginMessage");
     }
   }, []);
 
@@ -21,11 +21,9 @@ const Home = () => {
           {message}
         </div>
       )}
-      <h1 className="text-3xl font-bold">Welcome to the App Dashboard 1 </h1>
-      <h1 className="text-3xl font-bold">Welcome to the App Dashboard 2 </h1>
-      
+      <h1 className="text-3xl font-bold">This is Logout</h1>
     </div>
   );
 };
 
-export default Home;
+export default Logout;
