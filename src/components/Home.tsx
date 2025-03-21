@@ -23,8 +23,7 @@ const Home = () => {
       )}
       <h1 className="text-3xl font-bold">Welcome to the App Dashboard 1 </h1>
       <h1 className="text-3xl font-bold">Welcome to the App Dashboard 2 </h1>
-      <h1 className="text-3xl font-bold">Welcome to the App Dashboard 3 </h1>
-      <h1 className="text-3xl font-bold">Welcome to the App Dashboard 4 </h1>
+      
     </div>
   );
 };
