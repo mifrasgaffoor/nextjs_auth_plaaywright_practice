@@ -10,7 +10,7 @@ const Home = () => {
     const loginMessage = localStorage.getItem("loginMessage");
     if (loginMessage) {
       setMessage(loginMessage);
-      localStorage.removeItem("loginMessage"); // Clear message after displaying
+      localStorage.removeItem("loginMessage"); 
     }
   }, []);
 
@@ -21,7 +21,7 @@ const Home = () => {
           {message}
         </div>
       )}
-      <h1 className="text-3xl font-bold">Welcome to Home</h1>
+      <h1 className="text-3xl font-bold">Welcome to the App Dashboard</h1>
     </div>
   );
 };
